@@ -1,0 +1,11 @@
+### Start a Job
+POST https://weather-image-generator-fn.azurewebsites.net/api/StartJob
+Content-Type: application/json
+
+### Check Job Status
+GET https://weather-image-generator-fn.azurewebsites.net/api/JobStatus/{{jobId}}
+Content-Type: application/json
+
+### Fetch Generated Images
+GET https://weather-image-generator-fn.azurewebsites.net/api/GetImages/{{jobId}}
+Content-Type: application/json
