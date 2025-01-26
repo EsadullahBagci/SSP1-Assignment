@@ -15,7 +15,7 @@ namespace WeatherImageGenerator
     {
         [Function("GetImages")]
         public static async Task<HttpResponseData> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "GetImages/{jobId}")] HttpRequestData req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "GetImages/{jobId}")] HttpRequestData req,
             string jobId,
             FunctionContext context)
         {
